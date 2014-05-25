@@ -1,0 +1,36 @@
+<!doctype html>
+<title>hardware-demo</title>
+<link href="./css/style.css" type="text/css" rel="stylesheet"/>
+<div>
+    <h1>hardware-demo</h1>
+</div>
+<script>
+    var background = require('remote'),
+        app = background.require('app');
+
+    // function to handle change event
+    function handleChange ( change ) {
+        var converted,
+            color;
+        // convert colors to a good value for rgb
+        function convert ( key ) { 
+            var val;
+            try {
+                val = Math.round((Math.abs( +change[key] ) * 80));
+            } catch ( e ) {
+                val = [ 255, 255, 255 ];
+            }
+            return val;
+        }
+
+        // loops through keys then maps them to a converted value
+        converted = Object.keys( change ).map( convert );
+        color = 'rgb(' + converted.join(', ') + ')';
+
+        // set color to background;
+        document.body.style.background = color;
+    }
+    
+    // listen to change event
+    app.on('accel:change', handleChange );
+</script>

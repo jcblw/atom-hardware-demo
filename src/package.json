@@ -1,0 +1,9 @@
+{
+  "name": "hardware-demo",
+  "version": "0.0.0",
+  "main": "main.js",
+  "author": "Jacob Lowe",
+  "dependencies": {
+    "johnny-five": "git+https://git@github.com/jacoblwe20/johnny-five.git"
+  }
+}
