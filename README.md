@@ -1,6 +1,6 @@
 ## Atom Hardware Demo
 
-This app is a very simple app that intergrates hardware ( [Arduino](http://www.arduino.cc/) with [accelerometer](https://www.sparkfun.com/products/9652) ) using `[johnny-five](https://github.com/rwaldron/johnny-five)` into an atom-shell app.
+This app is a very simple app that intergrates hardware ( [Arduino](http://www.arduino.cc/) with [accelerometer](https://www.sparkfun.com/products/9652) ) using [`johnny-five`](https://github.com/rwaldron/johnny-five) into an atom-shell app.
 
 ## Installation
 
@@ -12,7 +12,7 @@ To install the this app just clone this repo and enter the directory.
 
 First you will need [atom-shell](https://github.com/atom/atom-shell), macs have a prebuilt binary, but everyone else read you os's documentation in the [development docs](https://github.com/atom/atom-shell/tree/master/docs/development).
 
-Then to install the proper dependecies you need to install with `(apm)[https://github.com/atom/apm]`. Why so, [read here](https://github.com/atom/atom-shell/blob/master/docs/tutorial/use-native-node-modules.md)?
+Then to install the proper dependecies you need to install with [`apm`](https://github.com/atom/apm). Why so, [read here](https://github.com/atom/atom-shell/blob/master/docs/tutorial/use-native-node-modules.md)?
 
     $ cd src
     $ apm install .
