@@ -1,5 +1,7 @@
 ## Atom Hardware Demo
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/jcblw/atom-hardware-demo.svg)](https://greenkeeper.io/)
+
 This app is a very simple app that intergrates hardware ( [Arduino](http://www.arduino.cc/) with [accelerometer](https://www.sparkfun.com/products/9652) ) using [`johnny-five`](https://github.com/rwaldron/johnny-five) into an atom-shell app.
 
 ## Installation
